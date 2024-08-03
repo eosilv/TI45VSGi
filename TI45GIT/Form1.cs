@@ -26,5 +26,40 @@ namespace TI45GIT
         {
 
         }
+
+        private void btnSoma_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            //text é onde eu coloco o nome para ficar na tela
+            var1 = int.Parse(tbValor1.Text);
+            var2 = int.Parse(tbValor2.Text);
+
+            total = var1 + var2;
+
+            //resultado na tela
+            lbResultado.Text = total.ToString();
+        }
+
+        private void btnMenos_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(tbValor1.Text);
+            var2 = int.Parse(tbValor2.Text);
+
+            total = var1 - var2;
+
+            lbResultado.Text = total.ToString();
+        }
+
+        private void btnVezes_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(tbValor1.Text);
+            var2 = int.Parse(tbValor2.Text);
+
+            total = var1 * var2;
+
+            lbResultado.Text = total.ToString();
+        }
     }
 }

@@ -33,8 +33,10 @@
             this.lbValor1 = new System.Windows.Forms.Label();
             this.lbValor2 = new System.Windows.Forms.Label();
             this.lbTotal = new System.Windows.Forms.Label();
-            this.lbResoltado = new System.Windows.Forms.Label();
-            this.btnsoma = new System.Windows.Forms.Button();
+            this.lbResultado = new System.Windows.Forms.Label();
+            this.btnSoma = new System.Windows.Forms.Button();
+            this.btnMenos = new System.Windows.Forms.Button();
+            this.btnVezes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbValor1
@@ -80,31 +82,54 @@
             this.lbTotal.Text = "Total";
             this.lbTotal.Click += new System.EventHandler(this.label3_Click);
             // 
-            // lbResoltado
+            // lbResultado
             // 
-            this.lbResoltado.AutoSize = true;
-            this.lbResoltado.Location = new System.Drawing.Point(88, 120);
-            this.lbResoltado.Name = "lbResoltado";
-            this.lbResoltado.Size = new System.Drawing.Size(16, 13);
-            this.lbResoltado.TabIndex = 5;
-            this.lbResoltado.Text = "...";
+            this.lbResultado.AutoSize = true;
+            this.lbResultado.Location = new System.Drawing.Point(88, 120);
+            this.lbResultado.Name = "lbResultado";
+            this.lbResultado.Size = new System.Drawing.Size(16, 13);
+            this.lbResultado.TabIndex = 5;
+            this.lbResultado.Text = "...";
             // 
-            // btnsoma
+            // btnSoma
             // 
-            this.btnsoma.Location = new System.Drawing.Point(36, 160);
-            this.btnsoma.Name = "btnsoma";
-            this.btnsoma.Size = new System.Drawing.Size(75, 23);
-            this.btnsoma.TabIndex = 6;
-            this.btnsoma.Text = "Soma";
-            this.btnsoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Location = new System.Drawing.Point(36, 160);
+            this.btnSoma.Name = "btnSoma";
+            this.btnSoma.Size = new System.Drawing.Size(75, 23);
+            this.btnSoma.TabIndex = 6;
+            this.btnSoma.Text = "Soma";
+            this.btnSoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
+            // 
+            // btnMenos
+            // 
+            this.btnMenos.Location = new System.Drawing.Point(36, 212);
+            this.btnMenos.Name = "btnMenos";
+            this.btnMenos.Size = new System.Drawing.Size(75, 23);
+            this.btnMenos.TabIndex = 13;
+            this.btnMenos.Text = "Menos";
+            this.btnMenos.UseVisualStyleBackColor = true;
+            this.btnMenos.Click += new System.EventHandler(this.btnMenos_Click);
+            // 
+            // btnVezes
+            // 
+            this.btnVezes.Location = new System.Drawing.Point(36, 264);
+            this.btnVezes.Name = "btnVezes";
+            this.btnVezes.Size = new System.Drawing.Size(75, 23);
+            this.btnVezes.TabIndex = 14;
+            this.btnVezes.Text = "Vezes";
+            this.btnVezes.UseVisualStyleBackColor = true;
+            this.btnVezes.Click += new System.EventHandler(this.btnVezes_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnsoma);
-            this.Controls.Add(this.lbResoltado);
+            this.Controls.Add(this.btnVezes);
+            this.Controls.Add(this.btnMenos);
+            this.Controls.Add(this.btnSoma);
+            this.Controls.Add(this.lbResultado);
             this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.lbValor2);
             this.Controls.Add(this.lbValor1);
@@ -124,8 +149,10 @@
         private System.Windows.Forms.Label lbValor1;
         private System.Windows.Forms.Label lbValor2;
         private System.Windows.Forms.Label lbTotal;
-        private System.Windows.Forms.Label lbResoltado;
-        private System.Windows.Forms.Button btnsoma;
+        private System.Windows.Forms.Label lbResultado;
+        private System.Windows.Forms.Button btnSoma;
+        private System.Windows.Forms.Button btnMenos;
+        private System.Windows.Forms.Button btnVezes;
     }
 }
 
